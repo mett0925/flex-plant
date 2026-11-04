@@ -1,20 +1,37 @@
-* {margin: 0px; padding: 0px; box-sizing: border-box;}
-h1, h2, h3 {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Do Hyeon", sans-serif;
   font-weight: normal;
 }
+
 main {
+  background-color: #F6FBF4;
+}
+
+#plants,
+#care,
+#shop,
+#news {
   max-width: 1000px;
   margin: auto;
-  background-color: #F6FBF4;
-
 }
+
 a {
   text-decoration: none;
 }
-ul, ol {
+
+ul,
+ol {
   list-style: none;
 }
+
 header {
   border: 1px solid black;
   background-color: #2D6A4F;
@@ -23,18 +40,22 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
+
 header .logo {
   color: white;
 }
+
 .menu {
   display: flex;
   gap: 20px;
 }
+
 .menu li a {
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
+
 .hero {
   margin: auto;
   display: flex;
@@ -43,42 +64,55 @@ header .logo {
   justify-content: center;
   height: 400px;
   gap: 30px;
-  background-color: #D8F3DC;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/flex-plant/img/forest.jpg");
+  background-size: contain;
   margin-bottom: 50px;
 }
+
 .hero h2 {
   font-size: 60px;
-  color: #2D6A4F;
+  color: #4db385;
 }
+
 .hero p {
-  color: black;
+  color: white;
+  font-weight: bold;
 }
+
 .sub {
   color: green;
 }
+
 .btn {
   background-color: #2D6A4F;
   padding: 20px;
   color: white;
 }
+
 .btn-line {
   background-color: #fff;
   border: 3px solid #2D6A4F;
   padding: 20px;
   color: #2D6A4F;
 }
+
 #plants {
   display: flex;
   flex-direction: column;
 }
+
 #plants h2 {
   color: #2D6A4F;
   font-size: 35px;
 }
+
 .cards {
   display: flex;
   gap: 10px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -88,37 +122,45 @@ header .logo {
   padding: 20px;
   background-color: white;
 }
+
 .card h3 {
   font-size: 28px;
 }
+
 .card button {
   padding: 8px 14px;
   background-color: #F4A261;
   color: white;
   border: none;
 }
+
 .icon {
   font-size: 60px;
   text-align: center;
 }
+
 .price {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
 }
+
 #care {
   padding: 10px;
   margin-bottom: 30px;
 }
+
 #care h2 {
   color: #2D6A4F;
   font-size: 35px;
 }
+
 .step {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .step li {
   height: 200px;
   display: flex;
@@ -128,36 +170,42 @@ header .logo {
   gap: 10px;
   background-color: white;
 }
+
 .num {
   padding: 12px 18px;
   background-color: #2D6A4F;
   color: white;
   font-weight: bolder;
 }
+
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 4px;
 }
+
 .tags li {
   background-color: #D8F3DC;
   padding: 10px;
   color: #2D6A4F;
   font-size: 16px;
 }
+
 #shop h2 {
   color: #2D6A4F;
   font-size: 35px;
   margin-bottom: 10px;
 }
-#shop ul{
+
+#shop ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 140px);
   padding: 10px;
   gap: 10px;
 }
+
 #shop ul li {
   background-color: #fff;
   display: flex;
@@ -166,26 +214,32 @@ header .logo {
   align-items: center;
   gap: 10px;
 }
+
 #shop ul li:first-child {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
   background-color: #2D6A4F;
   color: white;
 }
+
 .emoji {
   font-size: 40px;
 }
+
 #shop ul li:first-child .emoji {
   font-size: 80px;
 }
+
 #news {
   margin-top: 30px;
 }
+
 #news h2 {
   color: #2D6A4F;
   font-size: 35px;
   margin-bottom: 10px;
 }
+
 form {
   padding: 30px;
   background-color: #fff;
@@ -195,30 +249,36 @@ form {
   gap: 10px;
   align-items: center;
 }
+
 #email {
   flex: 1;
   padding: 10px;
   border: 3px solid black;
 }
+
 form select {
   padding: 10px;
   background-color: lightgrey;
 }
+
 form button {
   padding: 10px;
   background-color: #2D6A4F;
   color: white;
   border: none;
 }
+
 footer {
   display: flex;
   justify-content: space-between;
   background-color: #2D6A4F;
   padding: 30px;
 }
+
 footer p {
   color: white;
 }
+
 .sns {
   display: flex;
   gap: 10px;
