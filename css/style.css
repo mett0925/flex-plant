@@ -39,6 +39,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header .logo {
@@ -113,7 +116,40 @@ header .logo {
   gap: 10px;
 }
 
+.hot {
+  position: absolute;
+  display: flex;
+  color: white;
+  background-color: rgb(255, 60, 60);
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  left: -10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.new {
+  position: absolute;
+  display: flex;
+  color: white;
+  background-color: rgb(201, 120, 255);
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  left: -10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -288,4 +324,11 @@ footer p {
   color: white;
   font-weight: bold;
   font-size: 16px;
+}
+
+.top {
+  position: fixed;
+  left: calc(50% + 650px);
+  top: calc(50% + 300px);
+  font-size: 50px;
 }
